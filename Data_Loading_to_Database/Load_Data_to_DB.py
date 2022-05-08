@@ -36,8 +36,8 @@ def load_data_to_db():
     conn = pyodbc.connect('DRIVER={SQL Server};'
                           'SERVER=DT-SupplyPlanning-EU.biz.electrolux.com;Trusted_Connection=no;'
                           'Database=SupplyPlanning_Test;'
-                          'UID=supply_admin;'
-                          'PWD={i)Z\#6&;~fwJNZ7e}')
+                          'UID=*;'
+                          'PWD={*}')
 
     ### source csv files opened as dataframes
     df_idw_bal = pd.read_csv(idw_bal_csv,  low_memory=False)
